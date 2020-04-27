@@ -16,7 +16,10 @@
 		558F1B7F2454685400E7807B /* CovidChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F1B7E2454685400E7807B /* CovidChartsTests.swift */; };
 		558F1B8C2454689700E7807B /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F1B8B2454689700E7807B /* CountryData.swift */; };
 		558F1B8F2454724700E7807B /* CountryDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F1B8E2454724700E7807B /* CountryDataTests.swift */; };
+		558F1B9124547DF400E7807B /* Austria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F1B9024547DF400E7807B /* Austria.swift */; };
 		558F1B942454831600E7807B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F1B932454831600E7807B /* Date+Extension.swift */; };
+		558F1B962454852600E7807B /* Belgium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F1B952454852600E7807B /* Belgium.swift */; };
+		55DCB7A524559CAD00417D9A /* UnitedStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DCB7A424559CAD00417D9A /* UnitedStates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +46,10 @@
 		558F1B802454685400E7807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		558F1B8B2454689700E7807B /* CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = SOURCE_ROOT; };
 		558F1B8E2454724700E7807B /* CountryDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataTests.swift; sourceTree = "<group>"; };
+		558F1B9024547DF400E7807B /* Austria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Austria.swift; path = "CovidCharts/Models/Response Mappers/Austria.swift"; sourceTree = SOURCE_ROOT; };
 		558F1B932454831600E7807B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		558F1B952454852600E7807B /* Belgium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Belgium.swift; path = "CovidCharts/Models/Response Mappers/Belgium.swift"; sourceTree = SOURCE_ROOT; };
+		55DCB7A424559CAD00417D9A /* UnitedStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UnitedStates.swift; path = CovidCharts/UnitedStates.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				558F1B8B2454689700E7807B /* CountryData.swift */,
+				558F1B972454853200E7807B /* Response Mappers */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +137,16 @@
 				558F1B932454831600E7807B /* Date+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		558F1B972454853200E7807B /* Response Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				558F1B9024547DF400E7807B /* Austria.swift */,
+				558F1B952454852600E7807B /* Belgium.swift */,
+				55DCB7A424559CAD00417D9A /* UnitedStates.swift */,
+			);
+			path = "Response Mappers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +252,12 @@
 			files = (
 				558F1B6C2454685300E7807B /* ViewController.swift in Sources */,
 				558F1B682454685300E7807B /* AppDelegate.swift in Sources */,
+				55DCB7A524559CAD00417D9A /* UnitedStates.swift in Sources */,
 				558F1B8C2454689700E7807B /* CountryData.swift in Sources */,
 				558F1B6A2454685300E7807B /* SceneDelegate.swift in Sources */,
+				558F1B9124547DF400E7807B /* Austria.swift in Sources */,
 				558F1B942454831600E7807B /* Date+Extension.swift in Sources */,
+				558F1B962454852600E7807B /* Belgium.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

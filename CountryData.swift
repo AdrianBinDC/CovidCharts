@@ -9,16 +9,40 @@
 import Foundation
 
 
-/// `CountryProtocol` is a protocol that facilitates uniformity between disparate APIs
+/// `LatestReportingProtocol` is a protocol that facilitates uniformity between disparate APIs
 ///
 /// Various APIs are called to retrieve COVID-19 data and there are different keys for each
 /// country's API. This protocol knocks them down into common names and enables comparison
 /// across various countries' response mappers.
-protocol CountryProtocol {
-    var infected: Int { get }
-    var recovered: Int?  { get }
-    var deceased: Int { get }
-    var lastUpdated: Date { get }
+protocol LatestReportingProtocol {
+    
+    /// The total number of infected people
+    var totalInfected: Int { get }
+    
+    /// The total number of recovered patients
+    var totalRecovered: Int?  { get }
+    
+    /// The total number of deaths
+    var totalDeaths: Int { get }
+    
+    /// The date this information was last updated
+    var dataLastUpdated: Date? { get }
+    
+    /// Is regional data available for a given country
+    var regionalDataAvailable: Bool { get }
+    
+    var regionalCases: [RegionalCaseData]? { get }
+}
+
+/// `RegionalCaseData` is a struct used with the `LatestReportingProtocol`
+///
+/// Different APIs have different key values. To get them into a common form,
+/// `RegionalCaseData` is used.
+struct RegionalCaseData {
+    let regionName: String
+    let caseCount: Int?
+    let recoveredCount: Int?
+    let deaths: Int?
 }
 
 enum Country: String, CaseIterable {
